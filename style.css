@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6e6cb;
+  color: rgb(0, 0, 0);
+}
+header {
+  background-color: #973131;
+  color: #f9d689;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #f6b61e;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.search-container {
+  max-width: 800px;
+  margin: 50px auto 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-container input[type="text"] {
+  background-color: hwb(0 9% 46%);
+  color: white;
+  padding: 10px;
+  width: 300px;
+  border-radius: 30px 0 0 30px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  box-shadow: 4px 5px 5px rgb(180, 19, 19);
+}
+.search-container button {
+  background-color: hwb(0 4% 76%);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  width: 100px;
+  border-radius: 0 30px 30px 0;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  box-shadow: 4px 5px 5px rgb(80, 4, 4);
+  cursor: pointer;
+}
+.hero {
+  background-image: url("img/kakak.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #790909d8;
+  text-align: center;
+  padding: 100px;
+}
+
+.hero h1 {
+  font: size 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.button {
+  display: inline-block;
+  background-color: #490404;
+  color: rgb(243, 238, 238);
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 300ms all;
+}
+.button:hover,
+.order-button:hover {
+  background-color: #f07807;
+}
+
+.order-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px !important;
+  background-color: #b63008;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 300ms all;
+}
+.Promotion,
+.featured,
+.menu {
+  max-width: 1200px;
+  margin: 20px auto;
+  position: relative;
+}
+.Promotion h2,
+.featured h2,
+.menu h2 {
+  margin-bottom: 20px;
+}
+.menü-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu-item {
+  width: calc(33.333% - 20px);
+  background-color: #ffeea9;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(114, 69, 39);
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.menu-item hover {
+  transition: 300ms all;
+  transform: scale(1.03);
+}
+.menu-item img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.menu-item h3,
+.menu-item p {
+  margin-bottom: 15px;
+}
+
+.tag {
+  background-color: red;
+  color: rgb(253, 252, 251);
+  padding: 6px 10px;
+  border-radius: 6px;
+  position: absolute;
+  font-size: 15px;
+  top: 0px;
+  right: 0px;
+  font-weight: bold;
+  box-shadow: 3px 3px 3px rgb(53, 1, 1);
+}
+.menu-item span {
+  display: block;
+  font-weight: bold;
+  color: rgb(69, 129, 1);
+}
+
+.delete {
+  color: #b63008;
+}
+.footer {
+  background-color: #490404;
+  color: wheat;
+  text-align: center;
+  padding: 20px 0px;
+  width: 100%;
+}
+.footer a {
+  color: white;
+}
+
+@media only screen and (max-width: 480px) {
+  .menü-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-item {
+    width: 90%;
+    margin: 10px 0;
+    align-items: center;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .menu {
+    align-items: center;
+  }
+
+  h2 {
+    margin-left: 25px;
+  }
+}
